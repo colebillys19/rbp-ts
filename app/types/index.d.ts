@@ -1,5 +1,6 @@
 import { Reducer, Store } from 'redux';
 import { RouterState } from 'connected-react-router';
+import { ContainerState as LandingState } from 'containers/Landing/types';
 import { ContainerState as LanguageProviderState } from 'containers/LanguageProvider/types';
 
 export interface InjectedStore extends Store {
@@ -23,6 +24,7 @@ export interface InjectSagaParams {
 export interface ApplicationRootState {
   readonly router: RouterState;
   readonly language: LanguageProviderState;
+  readonly landing: LandingState;
   // for testing purposes
   readonly test: any;
 }
