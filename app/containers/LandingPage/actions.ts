@@ -1,6 +1,6 @@
 /*
  *
- * Landing actions
+ * LandingPage actions
  *
  */
 
